@@ -10,18 +10,55 @@
                 max-width: 100vw;
                 margin: 0;
                 width: 100vw;
-                overflow: hidden;
+                /*overflow: hidden;*/
+                overflow-x: hidden;
             }
 
             body {
                 margin: 0;
             }
 
+            footer {
+                margin-top: 2.5em;
+                width: 100vw;
+                padding: 2.5em 0;
+	            display: flex;
+	            justify-content: center;
+	            background-color: #212121;
+	            color: white;
+            }
+
+            footer div {
+                min-height: 15vh;
+                width: 12vw;
+                text-align: center;
+                font-size: 1.25em;
+                margin: 0 2.5em;
+            }
+
+            footer div h3 {
+                height: 2.5em;
+            }
+
+            footer div a {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            .copyright {
+                padding: 1.5em 0;
+                margin: 0;
+                background-color: #1B1B1B;
+                width: 100vw;
+            }
+
             .header {
                 background-color: white;
-                padding: 1.5em;
-                padding-left: 25vw;
-                padding-right: 25vw;
+                width: 100vw;
+	            padding: 1.5em 25vw;
+                position: fixed;
+                z-index: 999;
+	            box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
             }
 
             .header a {
@@ -39,18 +76,15 @@
                 background-color: lightgray;
                 width: 100vw;
                 padding-left: 0;
-                max-height: 75vh;
+                max-height: 80vh;
                 overflow: hidden;
             }
 
             .hero .text {
-                padding-left: 25vw;
-                max-width: 20vw;
+	            max-width: 20vw;
                 font-weight: 400;
-                padding: 25vh;
-                padding-top: 20vh;
-                padding-left: 25vw;
-                padding-right: 0;
+	            padding: 30vh 0 25vh 25vw;
+                user-select: none;
             }
 
             .hero .heroTitle {
@@ -69,10 +103,157 @@
             .hero .image {
                 width: 50vw;
                 aspect-ratio: 5/6;
-                background-image: url(https://clipart-library.com/images_k/black-man-transparent/black-man-transparent-8.png);
+                background-image:
+                        url(https://clipart-library.com/images_k/black-man-transparent/black-man-transparent-8.png);
                 background-size: cover;
                 transform: translateX(35vw) translateY(-50vh) scaleX(-1);
-                
+            }
+
+            .products {
+	            width: 100vw;
+	            padding: 2.5em 0;
+	            display: flex;
+	            justify-content: center;
+	            background-color: white;
+	            color: black;
+                max-height: 15vw;
+	            overflow: hidden;
+            }
+
+            .products a {
+	            width: 12vw;
+	            text-align: center;
+	            margin: 0 2.5em;
+	            text-decoration: none;
+	            overflow: hidden;
+            }
+
+            .products a .accessories {
+	            aspect-ratio: 1/1;
+	            background-image: url("accessories.jpg");
+	            background-size: cover;
+                filter: saturate(25%);
+	            border-radius: 1em;
+            }
+
+            .products a .bags {
+	            aspect-ratio: 1/1;
+	            background-image: url("bags.webp");
+	            background-size: cover;
+	            filter: saturate(25%);
+	            border-radius: 1em;
+	            overflow: hidden;
+            }
+
+            .products a .clothes {
+	            aspect-ratio: 1/1;
+	            background-image: url("clothes.jpg");
+	            background-size: cover;
+	            filter: saturate(25%);
+	            border-radius: 1em;
+	            overflow: hidden;
+            }
+
+            .products a .shoes {
+	            aspect-ratio: 1/1;
+	            background-image: url("shoes.jpg");
+	            background-size: cover;
+	            filter: saturate(0%);
+	            border-radius: 1em;
+	            overflow: hidden;
+            }
+
+            .products a .title {
+	            color: white;
+	            text-decoration: none;
+	            font-size: 2em;
+                font-weight: 700;
+	            aspect-ratio: 1/1;
+                backdrop-filter: brightness(25%);
+                transform: translateY(-12vw);
+	            border-radius: 1rem;
+	            overflow: hidden;
+            }
+
+            .products a .title .text{
+	            transform: translateY(5vw);
+            }
+
+            .featured {
+	            width: 100vw;
+	            padding: 2.5em 0;
+	            display: flex;
+	            justify-content: center;
+	            background-color: white;
+	            color: black;
+            }
+
+            .featured a {
+	            width: 12vw;
+	            text-align: center;
+	            margin: 0 2.5em;
+	            text-decoration: none;
+            }
+
+            .featured a .rolexWatch {
+                aspect-ratio: 1/1;
+	            background-image: url("accessories.jpg");
+	            background-size: cover;
+	            border-radius: 1em;
+            }
+
+            .featured a .rolexWatch:hover {
+	            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+	            transition: all 300ms;
+            }
+
+            .featured a .nikeBag {
+	            aspect-ratio: 1/1;
+	            background-image: url("bags.webp");
+	            background-size: cover;
+	            border-radius: 1em;
+            }
+
+            .featured a .nikeBag:hover {
+	            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+	            transition: all 300ms;
+            }
+
+            .featured a .suit {
+	            aspect-ratio: 1/1;
+	            background-image: url("clothes.jpg");
+	            background-size: cover;
+	            border-radius: 1em;
+            }
+
+            .featured a .suit:hover {
+	            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+	            transition: all 300ms;
+            }
+
+            .featured a .jordans {
+	            aspect-ratio: 1/1;
+	            background-image: url("shoes.jpg");
+	            background-size: cover;
+	            border-radius: 1em;
+            }
+
+            .featured a .jordans:hover {
+	            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+	            transition: all 300ms;
+            }
+
+            .featured a .title {
+                color: black;
+                text-decoration: none;
+                font-size: 2em;
+                margin-bottom: 0.25em;
+            }
+
+            .featured a .price {
+	            color: #ed1c24;
+	            text-decoration: none;
+                margin-top: 0;
             }
         </style>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -84,34 +265,118 @@
 
     <body>
         <div class="header">
-            <a class="title" href="/">
+            <a class="title" href="">
                 Woosh
             </a>
-                <a href="#home">
-                    Home
-                </a>
-                <a href="#products">
-                    Products
-                </a>
-                <a href="#blog">
-                    Blog
-                </a>
-                <a href="#pages">
-                    Pages
-                </a>
-                <a href="#contact">
-                    Contact
-                </a>
+            <a href="#home">
+                Home
+            </a>
+            <a href="#featured">
+                Featured
+            </a>
+            <a href="#blog">
+                Blog
+            </a>
+            <a href="#pages">
+                Pages
+            </a>
+            <a href="#contact">
+                Contact
+            </a>
         </div>
         <div class="hero" id="home">
             <div class="text">
                 <h3 class="heroSubtitle">Recreate your style</h3>
-                <h1 class="heroTitle">Get 50% discount off summer formal wears</h1>
+                <h1 class="heroTitle">Get a <span style="color: #ed1c24; font-weight: 700">50%</span> discount off summer formal wears</h1>
             </div>
             <div class="image"></div>
         </div>
         <div class="products" id="products">
-
+            <a href="#accessories">
+                <div class="accessories"></div>
+                <div class="title">
+                    <div class="text">Accessories</div>
+                </div>
+            </a>
+            <a href="#bags">
+                <div class="bags"></div>
+                <div class="title">
+                    <div class="text">Bags</div>
+                </div>
+            </a>
+            <a href="#clothes">
+                <div class="clothes"></div>
+                <div class="title">
+                    <div class="text">Clothes</div>
+                </div>
+            </a>
+            <a href="#shoes">
+                <div class="shoes"></div>
+                <div class="title">
+                    <div class="text">Shoes</div>
+                </div>
+            </a>
         </div>
+        <h1 style="width: 100vw; text-align: center; margin-bottom: 0">Featured Products</h1>
+        <h3 style="width: 100vw; text-align: center; margin-top: 0.25em; font-weight: 400">Explore our array of featured products and save money</h3>
+        <div class="featured" id="featured">
+            <a href="#rolex" class="rolex">
+                <div class="rolexWatch"></div>
+                <h2 class="title">
+                    Rolex
+                </h2>
+                <h3 class="price">
+                    50,000 BGN<br/><span style="font-weight: 400; color: gray"><strike>65,000 BGN</strike></span>
+                </h3>
+            </a>
+            <a href="#nikeBag" class="bag">
+                <div class="nikeBag"></div>
+                <h2 class="title">
+                    Nike Bag
+                </h2>
+                <h3 class="price">
+                    250 BGN<br/><span style="font-weight: 400; color: gray"><strike>300 BGN</strike></span>
+                </h3>
+            </a>
+            <a href="#suit" class="clothing">
+                <div class="suit"></div>
+                <h2 class="title">
+                    Blue Suit
+                </h2>
+                <h3 class="price">
+                    4,500 BGN<br/><span style="font-weight: 400; color: gray"><strike>5,250 BGN</strike></span>
+                </h3>
+            </a>
+            <a href="#jordans" class="shoe">
+                <div class="jordans"></div>
+                <h2 class="title">
+                    Jordans
+                </h2>
+                <h3 class="price">
+                    450 BGN<br/><span style="font-weight: 400; color: gray"><strike>550 BGN</strike></span>
+                </h3>
+            </a>
+        </div>
+        <footer>
+            <div>
+                <h3>Woosh</h3>
+                <p>Clothes for people</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#home">Back To Top</a>
+            </div>
+            <div>
+                <h3>Recent Posts</h3>
+                <p>No recent posts</p>
+            </div>
+            <div>
+                <h3>Newsletter</h3>
+                <p>Coming Soon</p>
+            </div>
+        </footer>
+        <footer class="copyright">
+            Copyright @ 2024 Kaloyan Nikolov. All Rights Reserved
+        </footer>
     </body>
 </html>
