@@ -1,12 +1,205 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seaside Hotel & Resort</title>
+    <!-- CSS link-->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet"
+   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+    <header>
+      <a href="#" class="logo"><img src="seaside3.png" alt=""></a>
+
+      <ul class="navmenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Hotel</a></li>
+        <li><a href="#">Resort</a></li>
+        <li><a href="#">Rooms</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div class="nav-icon">
+        <a href="#"><i class='bx bx-phone'></i></a>
+        <a href="#"><i class='bx bx-envelope'></i></a>  
+        <a href="#"><i class='bx bx-map'></i></a>    
+
+        <div class="bx bx-menu" id="menu-icon"></div>    
+      </div>
+
+    </header>
+
+    <style>
+      h5{
+        background-color: rgb(48, 45, 45);
+        color: white;
+      }
+
+      .main-btn{
+        background-color: rgb(224, 173, 42);
+        color: white;
+      }
+    </style>
+
+  <section class="main-home">
+    <div class="main-text">
+      <h5>Luxurious 2 person bedrooms</h5>
+
+      <a href="#"   class="main-btn">More about our accommodations <i class='bx bx-right-arrow-alt'
+      ></i></a>
+    </div>
+
+
+    <!-- popular-rooms-section -->
+
+      <div class="rooms">
+        <div class="row">
+          <img src="images.jpg" alt="">
+          <div class="room-text">
+            <h4>Holiday Promotion</h4>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="rating">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+          </div>
+
+          <div class="price">
+            <h4>2 Person Bedroom</h4>
+            <p>140BGN Per Night</p>
+          </div>
+
+        <div class="row">  
+          <img src="images2.jpg" alt="">
+          <div class="room-text">
+            <h4>Holiday Promotion</h4>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="rating">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+          </div>
+        </div>  
+
+          <div class="price">
+            <h4>2 Person Bedroom</h4>
+            <p>140BGN Per Night</p>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <!-- Client-Review-section -->
+
+  <section class="client-reviews">
+    <div class="reviews">
+        <h3>Client Reviews</h3>
+        <img src="girl.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ligula nisl, pharetra vel velit ut, blandit accumsan massa. Vestibulum mollis libero finibus ligula vestibulum efficitur in a risus. Proin fringilla convallis nibh in finibus. Ut at augue est. Morbi bibendum eros metus, in pulvinar quam ornare nec</p>
+
+        <h2>Samantha Brown</h2>
+        <p>Netherlands</p>
+    </div>
+  </section>
+  
+  <!-- information-section -->
+
+  <section class="information">
+    <div class="square">
+      <img src="1.png" alt="">
+    </div>
+
+    <div class="square">
+      <img src="2.png" alt="">
+    </div>
+
+    <div class="square">
+      <img src="3.png" alt="">
+    </div>
+  </section>
+
+  <!-- contact-section -->
+  <section class="contact">
+    <div class="contact-info">
+      <div class="first-info">
+        <img src="seaside3.png" alt="">
+
+        <p>Downside street 45, <br> Peru</p>
+        <p>(+31) 6 40 330 222</p>
+        <p>info@seasidehotel.com</p>
+
+        <div class="social-icon">
+          <a href="#"><i class='bx bxl-facebook' ></i></a>
+          <a href="#"><i class='bx bxl-twitter' ></i></a>
+          <a href="#"><i class='bx bxl-youtube' ></i></a>
+          <a href="#"><i class='bx bxl-google-plus' ></i></a>
+          <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+      </div>
+
+      <div class="second-info">
+        <h4>Support</h4>
+        <p>Contact up</p>
+        <p>About</p>
+        <p>Room Guide</p>
+        <p>Accommodation & Refunds</p>
+        <p>Privacy</p>
+      </div>
+
+      <div class="third-info">
+        <h4>Popular</h4>
+        <p>Belgium</p>
+        <p>Amsterdam</p>
+        <p>Munich</p>
+        <p>East-Asia</p>
+        <p>North America</p>
+      </div>
+
+      <div class="fourth-info">
+        <h4>information</h4>
+        <p>FAQ</p>
+        <p>About Us</p>
+        <p>Seaside Hotel</p>
+        <p>Contact Us</p>
+        <p>Sitemap</p>
+        <p>Last Minutes</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="end-text">
+    <p>Copyright A Studio Corvus. Powered by Webflow</p>
+  </div>
+
+
+
+
+
+
+
+
+  <script src="java.js"></script>
 
 </body>
 </html>
