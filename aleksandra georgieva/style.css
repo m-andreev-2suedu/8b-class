@@ -2,6 +2,14 @@
     background-color: beige;
 }
 
+.main-text{
+    margin-top: 10px;
+margin-bottom: 30px;
+font-size: 58px;
+line-height: 60px;
+font-weight: 600;
+}
+
 body {
     margin: 0%;
 }
@@ -11,7 +19,7 @@ body {
     padding: 0%;
     height: 800px;
     width: 864px;
-   background-image: url("https://placehold.co/800x864"); 
+   background-image: url("https://unsplash.com/photos/a-large-body-of-water-next-to-a-rocky-shore-63818HHQxGg"); 
 }
 
 .navigation {
@@ -27,8 +35,4 @@ body {
     background-repeat: no-repeat;
     background-position: right;
     position: absolute;
-    top: 3%;
-    left: 2%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
 }
