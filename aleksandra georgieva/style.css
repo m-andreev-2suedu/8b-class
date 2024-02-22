@@ -1,9 +1,15 @@
 #nav-bg-color{
-    background-color: beige;
+    background-color:#f8f8f8;
+}
+
+.text-travel1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+color: #9b9b9b;
 }
 
 .main-text{
-    margin-top: 10px;
+margin-top: 10px;
 margin-bottom: 30px;
 font-size: 58px;
 line-height: 60px;
@@ -19,7 +25,7 @@ body {
     padding: 0%;
     height: 800px;
     width: 864px;
-   background-image: url("https://unsplash.com/photos/a-large-body-of-water-next-to-a-rocky-shore-63818HHQxGg"); 
+   background-image: url("https://images.unsplash.com/photo-1706047838136-8415b6dfed17?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); 
 }
 
 .navigation {
@@ -34,5 +40,5 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    position: absolute;
+    display:
 }
